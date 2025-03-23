@@ -1,6 +1,6 @@
 # The Lost City of Atlantis - Storytelling Website
 
-![Project Screenshot](pic/story telling.png)
+![pic/story telling.png](pic/story telling.png)
 
 A professional and interactive storytelling website about the lost city of Atlantis. This project features smooth animations, a "Read More" option, and responsive design. Built using **HTML**, **CSS**, and **JavaScript**.
 
