@@ -1,0 +1,134 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background: #1a1a1a;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Custom Font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+  
+  /* Story Sections */
+  .story-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .story-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .story-section.visible .content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #00b4db, #0083b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #ddd;
+  }
+  
+  .more-content {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #00b4db, #0083b0);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 180, 219, 0.4);
+    margin: 10px;
+  }
+  
+  .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 180, 219, 0.6);
+  }
+  
+  /* Background Images for Each Section */
+  #section1 {
+    background-image: url('https://media.istockphoto.com/id/1170804921/photo/turtle-closeup-with-school-of-fish.jpg?s=612x612&w=0&k=20&c=0l3Sw_Lx-9PVHjR963pvt9A6-p7sxwMe-xm9LnwxAgw=');
+  object-fit: contain;
+  }
+
+  #section2 {
+    background-image: url('https://media.istockphoto.com/id/1499019570/photo/roof-garden.jpg?s=612x612&w=0&k=20&c=RZgcJAPvFJpWCnPofWSdLbypePbPvqPB46vnU3bBnYQ=');
+  }
+
+  #section3 {
+    background-image: url('https://media.istockphoto.com/id/502126600/photo/pirates-chest.jpg?s=612x612&w=0&k=20&c=0lsj2kGR3StAkQ8UorcVanyB44N_LPqvfcxAJijtKWY=');
+  }
+
+  #section4 {
+    background-image: url('https://media.istockphoto.com/id/1133073540/photo/tropical-beach-and-beautiful-sunrise-view-in-punta-cana-bay-dominican-republic.jpg?s=612x612&w=0&k=20&c=YsLPlxvmgdx4DOjxB3VFYju6pMqTARvYwy4KkfnM09c=');
+  }
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .content {
+      padding: 15px;
+    }
+  }
