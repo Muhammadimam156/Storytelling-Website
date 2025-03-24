@@ -8,7 +8,7 @@ A professional and interactive storytelling website about the lost city of Atlan
 
 ## **Features**
 
-- **Full Story**: A 4-chapter story about the lost city of Atlantis.
+- **Full Story**: A 4-chapter story about the lost city of Atlantis
 - **Related Pictures**: High-quality, royalty-free images from Unsplash.
 - **Smooth Animations**: Sections fade in and slide up as you scroll.
 - **Read More Option**: Toggle additional content for each chapter.
